@@ -24,6 +24,22 @@ class Prime
         return true;
     }
 
+    public static function findsPrimesUpTo($max)
+    {
+        $allNumbers = range(2, $max);
+        $primes = array_combine($allNumbers, $allNumbers);
+        $number = 2;
+
+        while ($number * $number < $max) {
+            for ($i = 2 * $number; $i <= $max; $i += $number) {
+                unset($primes[$i]);
+            }
+            $number = next($primes);
+        }
+
+        return $primes;
+    }
+
 
 
 

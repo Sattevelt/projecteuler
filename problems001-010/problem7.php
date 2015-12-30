@@ -1,6 +1,6 @@
 <?php
 
-require_once './common/prime.php';
+require_once './../common/prime.php';
 
 $count = 0;
 $num = 1;

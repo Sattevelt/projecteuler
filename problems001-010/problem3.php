@@ -1,8 +1,5 @@
 <?php
 
-require_once './common/prime.php';
-
-
 $number = 600851475143;
 $max = (int)ceil($number / 2);
 $factor = 2;
